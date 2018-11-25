@@ -1,0 +1,21 @@
+<html>
+<script>
+
+  function start() {
+    console.log('start');
+    var text = '';
+    for(i=0; i < 10; i++) {
+      text += i + ' ';
+    }
+    var ele = document.getElementById('home');
+    console.log(text);
+    console.log(ele);
+    ele.innerHTML = text;
+  }
+</script>
+
+  <body onload="start()">
+    <h1>Start</h1>
+    <div id='home'></div>
+  </body>
+</html>
